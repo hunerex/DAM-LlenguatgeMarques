@@ -1,0 +1,400 @@
+/* ====== KEYFRAMES PREMIUM ====== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colorShift {
+  0%,
+  100% {
+    fill: #1a4d26;
+  }
+  50% {
+    fill: #2d6a3a;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(8px);
+  }
+  60% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+}
+
+/* Carrusel CSS puro mejorado - 12 slides con timing suave */
+@keyframes carouselSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 12 * 8));
+  }
+}
+
+@keyframes glowEffect {
+  0%,
+  100% {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 12px 32px rgba(212, 175, 55, 0.3);
+  }
+}
+
+/* Keyframes mejorados para scroll timeline con efecto 3D */
+@keyframes scrollFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes scrollFadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px) rotateY(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+}
+
+@keyframes scrollFadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px) rotateY(5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+}
+
+/* Pulse premium para nodos del timeline con glow dinámico */
+@keyframes nodePulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0.3), inset 0 1px 0
+      rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.7), 0 0 50px rgba(212, 175, 55, 0.5), inset 0 1px 0
+      rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) scale(1.08);
+  }
+}
+
+@keyframes borderGlow {
+  0%,
+  100% {
+    border-color: rgba(139, 69, 19, 0.4);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+  50% {
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+  }
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Bounce premium para indicador de scroll */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-18px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Partículas de hojas doradas flotantes premium */
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-100px) translateX(30px) rotate(180deg) scale(1.1);
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-20px) rotate(360deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Animación de línea de tiempo que se dibuja */
+@keyframes drawLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/* Ripple effect para botones */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Typewriter effect para textos */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Glow pulsante para hero title */
+@keyframes heroGlow {
+  0%,
+  100% {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6), 0 0 40px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6), 0 0 60px rgba(212, 175, 55, 0.5), 0 0 80px rgba(212, 175, 55, 0.3);
+  }
+}
+
+/* ====== APLICACIÓN DE ANIMACIONES ====== */
+
+/* Animación de entrada para scroll items con CSS scroll-driven */
+@supports (animation-timeline: view()) {
+  .scroll-item {
+    animation: scrollFadeInRight 0.8s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 5% cover 35%;
+  }
+
+  .scroll-item:nth-child(even) {
+    animation-name: scrollFadeInLeft;
+  }
+}
+
+/* Fallback con transiciones escalonadas */
+@supports not (animation-timeline: view()) {
+  .scroll-item {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .scroll-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .scroll-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .scroll-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .scroll-item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .scroll-item:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+  .scroll-item:nth-child(6) {
+    transition-delay: 0.6s;
+  }
+}
+
+/* Pulse animation para nodos visibles */
+.scroll-item.visible::before {
+  animation: nodePulse 2.5s ease-in-out infinite;
+}
+
+/* Partículas de hojas doradas en hero mejoradas */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.8) 0%, rgba(212, 175, 55, 0.3) 50%, transparent 100%);
+  border-radius: 50% 0 50% 50%;
+  animation: particleFloat 12s ease-in-out infinite;
+  filter: blur(0.5px);
+}
+
+.particle:nth-child(1) {
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+.particle:nth-child(2) {
+  top: 55%;
+  left: 20%;
+  animation-delay: 2s;
+  animation-duration: 14s;
+}
+.particle:nth-child(3) {
+  top: 35%;
+  left: 65%;
+  animation-delay: 4s;
+  animation-duration: 11s;
+}
+.particle:nth-child(4) {
+  top: 75%;
+  left: 80%;
+  animation-delay: 6s;
+  animation-duration: 13s;
+}
+.particle:nth-child(5) {
+  top: 25%;
+  left: 45%;
+  animation-delay: 8s;
+  animation-duration: 15s;
+}
+.particle:nth-child(6) {
+  top: 65%;
+  left: 55%;
+  animation-delay: 1s;
+  animation-duration: 12s;
+}
+.particle:nth-child(7) {
+  top: 45%;
+  left: 90%;
+  animation-delay: 3s;
+  animation-duration: 11s;
+}
+.particle:nth-child(8) {
+  top: 85%;
+  left: 35%;
+  animation-delay: 5s;
+  animation-duration: 14s;
+}

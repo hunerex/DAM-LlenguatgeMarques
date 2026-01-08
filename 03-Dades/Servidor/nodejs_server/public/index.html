@@ -1,14 +1,240 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <link rel="stylesheet" href="estils.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>Pàgina</title>
-    </head>
-    <body>
-        Hola món
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Root: A Woodland Game of Might and Right - Juego de estrategia asimétrica ganador del Golden Geek 2018. Domina cuatro facciones únicas en el Woodland.">
+    <meta name="keywords" content="Root juego de mesa, estrategia asimétrica, Leder Games, juego woodland, facciones, Cole Wehrle, Kyle Ferrin">
+    <meta name="author" content="Leder Games">
+    <title>Root: A Woodland Game of Might and Right - Inicio</title>
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <!-- Añadido page-specific.css para consistencia -->
+    <link rel="stylesheet" href="css/page-specific.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header role="banner" class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" aria-label="Ir a inicio">
+                    <img src="assets/img/logo.jpg" alt="Logo Root: A Woodland Game of Might and Right" class="logo" width="60" height="60">
+                </a>
+            </div>
+            
+            <div class="title-section">
+                <h1 class="game-title">Root: A Woodland Game of Might and Right</h1>
+            </div>
+            
+            <nav role="navigation" class="nav" aria-label="Navegación principal">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+                <label for="menu-toggle" class="menu-label" aria-label="Abrir menú de navegación">
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html" class="active" title="Explora el epicentro del Woodland">Inicio</a></li>
+                    <li><a href="instrucciones.html" title="Domina mecánicas asimétricas paso a paso">Instrucciones</a></li>
+                    <li><a href="historia.html" title="Sumérgete en el lore forestal profundo">Historia</a></li>
+                    <li><a href="contacto.html" title="Conecta con la comunidad estratégica">Contacto</a></li>
+                    <li><a href="about.html" title="Conoce al equipo visionario">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="main-content">
+        
+        <section class="hero" aria-label="Destacado principal">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="hero-title">Donde la Estrategia Encuentra el Caos Forestal</h2>
+                <p class="hero-subtitle">El Juego Asimétrico Ganador del Golden Geek 2018</p>
+                <a href="instrucciones.html" class="cta-button" aria-label="Inicia tu aventura en Root">¡Juega Ahora!</a>
+            </div>
+            <div class="hero-particles" aria-hidden="true">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+        </section>
+
+        <section class="svg-animation-section" aria-label="Animación vectorial del Woodland">
+            <h2 class="section-title">El Corazón del Woodland Vivo</h2>
+            <div class="svg-container">
+                <svg width="240" height="240" viewBox="0 0 240 240" class="woodland-orb" role="img" aria-label="Orbe animado representando las facciones de Root">
+                    <defs>
+                        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.35"/>
+                        </filter>
+                        <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1a4d26"/>
+                            <stop offset="100%" style="stop-color:#0d2817"/>
+                        </linearGradient>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#d4af37"/>
+                            <stop offset="100%" style="stop-color:#e8c547"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Base circle -->
+                    <circle cx="120" cy="120" r="95" class="orb-base" fill="url(#forestGrad)" filter="url(#shadow)"/>
+                    <circle cx="120" cy="120" r="85" class="orb-inner" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
+                    
+                    <!-- Faction symbols - 4 leaves for 4 factions -->
+                    <g class="leaf-group">
+                        <!-- Marquise (top) - Industrial -->
+                        <path d="M120 25 Q135 55 120 85 Q105 55 120 25" class="leaf leaf-cat" fill="#8B4513">
+                            <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+                        </path>
+                        <!-- Eyrie (right) - Celestial -->
+                        <path d="M195 100 Q165 115 135 100 Q165 85 195 100" class="leaf leaf-eyrie" fill="#4a90d9">
+                            <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+                        </path>
+                        <!-- Alliance (bottom) - Revolutionary -->
+                        <path d="M120 215 Q105 185 120 155 Q135 185 120 215" class="leaf leaf-alliance" fill="#c0392b">
+                            <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+                        </path>
+                        <!-- Vagabond (left) - Wanderer -->
+                        <path d="M45 100 Q75 85 105 100 Q75 115 45 100" class="leaf leaf-vagabond" fill="#7f8c8d">
+                            <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+                        </path>
+                    </g>
+                    
+                    <!-- Central rotating element -->
+                    <g class="center-icon">
+                        <circle cx="120" cy="120" r="25" fill="url(#goldGrad)" opacity="0.9">
+                            <animate attributeName="r" values="25;28;25" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <text x="120" y="125" text-anchor="middle" class="orb-text" fill="#1a4d26" font-size="11" font-weight="700">ROOT</text>
+                    </g>
+                    
+                    <!-- Rotating outer ring -->
+                    <circle cx="120" cy="120" r="105" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="10 5" class="rotating-ring">
+                        <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="20s" repeatCount="indefinite"/>
+                    </circle>
+                </svg>
+            </div>
+            <p class="svg-description">Un símbolo de la eterna batalla entre facciones: el ciclo infinito de conquista, revolución y asimetría que define Root desde 2018. Cuatro hojas representan las cuatro facciones base del Woodland.</p>
+        </section>
+
+        <section class="scroll-animation-section" aria-label="Historia épica del juego">
+            <h2 class="section-title">La Aventura Épica Desplegada</h2>
+            <p class="scroll-intro">Desplázate para descubrir el viaje desde la paz forestal hasta la guerra total</p>
+            
+            <div class="scroll-container">
+                <article class="scroll-item visible" data-index="1">
+                    <h3>La Génesis del Caos Asimétrico</h3>
+                    <p>Root es un juego de guerra asimétrica diseñado por Cole Wehrle y publicado por Leder Games en 2018. De 2 a 4 jugadores (expandible a 6) compiten por el control del Woodland, un vasto bosque ancestral. A diferencia de juegos convencionales donde todos tienen reglas iguales, en Root cada facción juega completamente diferente. El tablero muestra 12 clearings conectados por caminos forestales, donde cada jugador debe controlar territorio, recursos y alianzas. Las partidas duran 60 a 90 minutos. El genio de Root radica en que ninguna facción es "mejor" – solo diferente, garantizando miles de posibles narrativas emergentes.</p>
+                </article>
+
+                <article class="scroll-item visible" data-index="2">
+                    <h3>La Marquise de Cat: Expansión Industrial Implacable</h3>
+                    <p>La Marquise de Cat representa el imperialismo industrial felino. Esta facción construye edificios (talleres, aserraderos, reclutadores) para obtener puntos de victoria. Según The Law of Root, la Marquise gana VP por cada edificio construido, acumulando bonificaciones por clusters. Su estrategia principal es el "snowball" – acumular recursos (madera) temprano para expandirse exponencialmente. Comienza controlando casi todo el mapa pero debe defender su imperio contra las otras facciones que buscan derrocarla.</p>
+                </article>
+
+                <article class="scroll-item visible" data-index="3">
+                    <h3>Los Eyrie Dynasties: Burocracia Celestial en Colapso</h3>
+                    <p>Los Eyrie representan una monarquía aviaria atada a decretos rígidos. Cada turno, estos nobles alados deben ejecutar acciones en orden específico (el Decreto): reclutamiento, movimiento, batalla, construcción. Si no pueden completar una acción, caen en "turmoil" – pierden puntos y resetean. Los Eyrie buscan recuperar su antiguo imperio construyendo roosts (nidos) en los clearings. Requieren planificación perfecta; un error causa cascadas que otros jugadores explotan.</p>
+                </article>
+
+                <article class="scroll-item visible" data-index="4">
+                    <h3>La Woodland Alliance: Revolución desde las Sombras</h3>
+                    <p>La Woodland Alliance es un movimiento revolucionario de criaturas oprimidas (ratones, zorros, conejos). Ganan puntos esparciendo "sympathy" (simpatía) tokens en clearings, y cuando la simpatía es suficiente, pueden hacer "revolts" para construir bases militares. Las bases confieren "martial law" – enemigos pagan costos adicionales para atacar. La Alliance es débil temprano pero devastadora en late-game. Si la Marquise y Eyrie luchan entre sí, la Alliance crece sin ser molestada hasta explotar.</p>
+                </article>
+
+                <article class="scroll-item visible" data-index="5">
+                    <h3>El Vagabond: Oportunista Solitario en el Bosque</h3>
+                    <p>El Vagabond es un aventurero solitario que juega por sí mismo, sin ejército. Gana puntos mejorando relaciones con facciones (coaliciones), removiendo guerreros hostiles, y completando quests para reliquias. Maneja un inventario de items (espada, antorcha, martillo) que agota para habilidades especiales. El Vagabond es el wildcard: puede ayudar a cualquier facción pero su lealtad es volátil. A menudo cambia alianzas en el turno final para ganar.</p>
+                </article>
+
+                <article class="scroll-item visible" data-index="6">
+                    <h3>Expansiones: Profundidad Infinita del Woodland</h3>
+                    <p>La expansión Riverfolk Company (2018) introdujo a los mercaderes otters que venden servicios por dinero, y la Lizard Cult que sacrifica cartas para un dios reptil. Underworld (2020) añadió el Duchy subterráneo y los Corvid Conspiracy. Clockwork (2020) permitió solo-play contra bots automáticos. Marauder (2022) trajo a los Lords of the Hundreds y Keepers in Iron. Cada expansión enriquece el universo sin bloatearlo, añadiendo nuevas tácticas y narrativas. Root evolucionó de juego competitivo a ecosistema vivo con una de las comunidades más dedicadas en BoardGameGeek.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="how-to-play" aria-label="Cómo se juega">
+            <h2 class="section-title">¿Cómo Se Juega Root?</h2>
+            <p class="section-intro">Mecánicas Asimétricas en su Expresión Más Pura</p>
+            
+            <div class="mechanics-grid">
+                <div class="mechanics-intro">
+                    <p>Root redefine juegos de mesa con asimetría radical: no solo facciones con capacidades diferentes, sino sistemas de victoria completamente divergentes. Mientras la Marquise gana por construcción, los Eyrie por decretos, Alliance por revolución y Vagabond por quests, cada uno juega prácticamente un juego distinto bajo techo común. El tablero de 12 clearings conectados por caminos y ríos crea un campo dinámico donde el control territorial traduce a acciones futuras. El flujo de juego sigue tres fases: Birdsong (preparación), Daylight (acciones principales) y Evening (puntuación y limpieza). Root ganó el Golden Geek Award 2018 por su innovación en diseño asimétrico.</p>
+                </div>
+
+                <ul class="mechanics-list">
+                    <li class="mechanic-item">
+                        <span class="mechanic-icon" aria-hidden="true">🏗️</span>
+                        <div>
+                            <strong>Setup Inicial Modular:</strong> Despliega mapa (lado verano/invierno), asigna facciones, cada una coloca componentes en posiciones únicas. Baraja 54 cartas y distribuye 5 a cada jugador.
+                        </div>
+                    </li>
+                    <li class="mechanic-item">
+                        <span class="mechanic-icon" aria-hidden="true">🌅</span>
+                        <div>
+                            <strong>Fase Birdsong:</strong> Fase de preparación donde cada facción realiza acciones específicas: reclutamiento, ajuste de decretos, reparación de items. Establece el momentum para Daylight.
+                        </div>
+                    </li>
+                    <li class="mechanic-item">
+                        <span class="mechanic-icon" aria-hidden="true">☀️</span>
+                        <div>
+                            <strong>Fase Daylight:</strong> Acciones principales: Mover guerreros, Batallar, Craftear items con cartas, y Construir edificios. Cada facción tiene variantes únicas de estas acciones.
+                        </div>
+                    </li>
+                    <li class="mechanic-item">
+                        <span class="mechanic-icon" aria-hidden="true">🌙</span>
+                        <div>
+                            <strong>Fase Evening:</strong> Dibuja cartas, suma puntos de victoria según tu facción, resuelve eventos especiales. Evalúa si alguien alcanzó 30 VP o condición de Dominancia.
+                        </div>
+                    </li>
+                    <li class="mechanic-item">
+                        <span class="mechanic-icon" aria-hidden="true">🎯</span>
+                        <div>
+                            <strong>Victoria:</strong> Primer jugador que alcanza 30 puntos de victoria gana. Alternativa: juega Dominance Card para ganar controlando 3 clearings del mismo suit.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cta-link-container">
+                <a href="instrucciones.html" class="cta-link" title="Domina mecánicas asimétricas paso a paso">
+                    Guía Completa de Instrucciones →
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo" class="footer">
+        <div class="footer-container">
+            <div class="copyright">
+                <p><span class="copyright-symbol">©</span> 2025 Root: A Woodland Game of Might and Right – Todos los derechos reservados. Desarrollado por Leder Games (Saint Paul, Minnesota), publicado en 2018. Diseñado por Cole Wehrle, ilustrado por Kyle Ferrin. Este sitio es un proyecto educativo no afiliado oficialmente.</p>
+            </div>
+            <nav class="social-icons" aria-label="Redes sociales">
+                <a href="https://twitter.com/ledergames" target="_blank" rel="noopener noreferrer" title="Síguenos en Twitter/X" aria-label="Twitter">
+                    <span class="material-icons" aria-hidden="true">X</span>
+                </a>
+                <a href="https://instagram.com/ledergames" target="_blank" rel="noopener noreferrer" title="Síguenos en Instagram" aria-label="Instagram">
+                    <span class="material-icons" aria-hidden="true">photo_camera</span>
+                </a>
+                <a href="https://facebook.com/ledergames" target="_blank" rel="noopener noreferrer" title="Síguenos en Facebook" aria-label="Facebook">
+                    <span class="material-icons" aria-hidden="true">facebook</span>
+                </a>
+                <a href="https://tiktok.com/@ledergames" target="_blank" rel="noopener noreferrer" title="Síguenos en TikTok" aria-label="TikTok">
+                    <span class="material-icons" aria-hidden="true">tiktok</span>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
 </html>
